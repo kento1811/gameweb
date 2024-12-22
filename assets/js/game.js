@@ -10,7 +10,7 @@ const sprite_height = 523;
 let frameX  = 0;
 let frameY = 0;
 let gameFrame  = 0;
-let playerState = 'roll';
+let playerState = 'run';
 const staggerFrame = 5;
 
 
