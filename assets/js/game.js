@@ -10,7 +10,7 @@ const sprite_height = 523;
 let frameX  = 0;
 let frameY = 0;
 let gameFrame  = 0;
-let playerState = 'run';
+let playerState = 'idle';
 const staggerFrame = 5;
 
 
@@ -84,3 +84,15 @@ function animate(){
 }
 
 animate();
+document.addEventListener('keydown', function(event) {
+    if(event.keyCode == 37) {
+        playerState = 'bite';
+    }
+    else if(event.keyCode == 39) {
+        playerState = 'run';
+    } else if(event.keyCode == 38){
+        playerState ='jump';
+    } else if(event.keyCode == 40){
+        playerState = 'roll';
+    }
+};
