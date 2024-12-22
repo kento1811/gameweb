@@ -94,5 +94,5 @@ document.addEventListener('keydown', function(event) {
         playerState ='jump';
     } else if(event.keyCode == 40){
         playerState = 'roll';
-    }
+    } else{playerState = 'idle';}
 };
